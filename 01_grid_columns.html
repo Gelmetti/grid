@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Columns</title>
+
+    <style>
+
+        .grid-container{
+            display: grid;
+            /* grid-template-columns: 100px 300px; */
+            /* grid-template-columns: 1fr 3fr 1fr; */
+            grid-template-columns: repeat(4, auto );
+            gap: 1rem;
+        }
+        .item{
+            padding: 3rem;
+            background: bisque;
+            border: 2px solid black;
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 2rem;
+            margin: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+
+    </div>
+
+    <main>
+        <section>
+            <h3>Hello from grid</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita molestiae cumque atque perferendis vitae iusto iure perspiciatis. Atque omnis illo in, debitis a, cupiditate natus rem veniam nihil hic rerum!</p>
+
+        </section>
+
+        <aside>
+
+            <h3>contacta con nosotrps</h3>
+            <ul>
+                <li>acm</li>
+                <li>ave</li>
+                <li>hdhdh</li>
+                <li>jdjdkkdk</li>
+            </ul>
+                
+        </aside>
+    </main>
+</body>
+</html>
